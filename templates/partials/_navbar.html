@@ -1,0 +1,75 @@
+<nav class="navbar-light bg-light navbar-expand-sm sticky-top">
+    <!-- Search bar -->
+    <div class="container">
+        <div class="row m-auto">
+            <div class="col-sm-2 m-auto">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="img/logo.svg.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> -->
+                <h2 class="display-4">Eland</h2>
+            </a>
+            </div>
+            <div class="col-sm-6 mt-4">
+            <form method="POST">
+                <div class="input-group-prepend">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                    <label class="sr-only">Category</label>
+                    <select name="category" class="form-control col-xs-3 w-50">
+                        <option selected="true" disabled="disabled">(All)</option>
+                        <option value="men">Men</option>
+                        <option value="men">Women</option>
+                    </select>
+                <input type="text" name="appointment_date" class="form-control form-control col-xs-7">
+                <button type="button" class="btn btn-dark col-xs-2"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            </div>
+            <div class="col-sm-4 mt-2">
+            <ul class="list-inline float-right">
+                <li class="list-inline-item">
+                <a class="text-dark" href="#" data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart"></i>Cart <span class="badge badge-pill badge-danger">4</span></a>
+                </li>
+                <li class="list-inline-item ml-3">
+                <a class="text-dark" href="#" data-toggle="modal" data-target="#loginform"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </li>
+                <li class="list-inline-item">
+                <a class="text-dark" href="#" data-toggle="modal" data-target="#signupform"><i class="fas fa-user-plus"></i> Signup</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- main nav -->
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Men
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Women
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>
